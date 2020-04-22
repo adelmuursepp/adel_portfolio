@@ -1,0 +1,37 @@
+%div
+  .row.row--full-height
+    .row__medium-1-2
+      = image_tag "https://res.cloudinary.com/adelcloud/image/upload/v1583773705/banner.jpg", :alt => "woman typing on laptop computer", :class => "img--full-height img--background-until-medium"
+    .row__medium-1-2
+      .container.container--full-height.container--centered-vh.container--overlay-until-medium-dark
+        %h1.section-title= "Hi, I'm Adel"
+        %p#banner-typed-text= "Nice to meet you"
+        = link_to "Learn More", about_path, :class => "button button--outline"
+.page-section.page-section--light-accent.relative
+  .container.generic-content-container
+    %h2.section-title.topic-title= "Writing code and poetry"
+    .row
+      .row__large-3-5
+        %p
+          = "Basically attached to a coffee cup, I like to work on projects and write about them."
+          / %span.cursive= "I'm working on that one."
+        %p= ""
+        %p= ""
+        = link_to about_path do
+          :markdown
+            Read about me ➡
+  / = image_tag "https://res.cloudinary.com/adelcloud/image/upload/v1583609132/veebileht_ynlgb4.jpg", :height => "500", :width => "500", :alt => "Adel Müürsepp", :class => "img--absolute-br img--backward-until-large reveal-item"
+.page-section
+  .container
+    %h2.section-title.topic-title= "Coding material"
+    %p= "I have gathered together some amazing resources together for learning Python, Ruby and iOS"
+    / %p= ""
+    = link_to resource_categories_path do
+      :markdown
+        Check them out ➡
+/ .page-section
+/   .container.container--narrow.container--centered.generic-content-container
+/     %h2.section-title= "Want to work together?"
+/     %p
+/       :markdown
+/         Are you working on something useful and need a technical person who's your users' *best* advocate? I'd love to get involved. [Get in touch](#{new_message_path})
